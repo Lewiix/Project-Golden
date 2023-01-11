@@ -1,0 +1,37 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+//Navigation Bar
+.navigation {
+    margin-top: 30px;
+    .container {
+        display: flex;
+    }
+    .nav-left-button {
+        a {
+            text-decoration: none;
+            
+        }
+        li {
+            padding: 0 20px;
+        }
+        list-style-type: none;
+        flex: 0.5;
+        flex-wrap: wrap;
+    }
+    .nav-right-buttons {
+        a {
+            text-decoration: none;
+            
+        }
+        li {
+            padding: 0 20px;
+        }
+        display: flex;
+        list-style-type: none;
+        flex: 0.5;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
