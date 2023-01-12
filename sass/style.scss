@@ -1,37 +1,122 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
+// Global Settings
+body {
+    margin: 0;
+}
+section {
+    position: relative;
+    top: 0;
+}
+$button-color: #f9ca24;
+$gold-color: #f1c40f;
+$font-nav-buttons: 'Inconsolata', monospace;
+$font-subtitle: 'Kalam', cursive;
+$font-text: 'Maven Pro', sans-serif;
+$font-head: 'Paytone One', sans-serif;
+$font-logo: 'Satisfy', cursive;
+$font-title: 'Signika', sans-serif;
 
 //Navigation Bar
 .navigation {
-    margin-top: 30px;
+    margin-top: 0;
+    background-image: url("https://i.postimg.cc/LXgk1GXH/pexels-saya-kimura-401107.jpg");
+    height: 75vh;   
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
     .container {
-        display: flex;
+        display: flex;  
     }
     .nav-left-button {
+        i {
+            color: $gold-color;
+            font-size: 62px;
+            padding: 0 2px;
+            position: absolute;
+            top: 8px;
+            left: -50px;
+        }
         a {
             text-decoration: none;
-            
+            color: $gold-color;
         }
         li {
             padding: 0 20px;
+            position: relative;
         }
         list-style-type: none;
-        flex: 0.5;
+        flex: 1;
         flex-wrap: wrap;
+        margin-top: 60px;
+        font-family: $font-logo;
+        font-size: 60px; 
     }
     .nav-right-buttons {
         a {
             text-decoration: none;
-            
+            color: white;
         }
         li {
-            padding: 0 20px;
+            padding: 5px 20px;
         }
         display: flex;
         list-style-type: none;
-        flex: 0.5;
-        justify-content: space-between;
+        flex: 3;
         flex-wrap: wrap;
+        margin-top: 60px;
+        font-size: 16px;
+        justify-content: flex-end;
+        padding-top: 16px;
+        font-family: $font-nav-buttons;
     }
+}
+
+//Splash Title
+.splash {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -520px;
+    text-align: center;
+    min-width: 540px;
+    max-height: 450px;
+    margin: -230px 0;
+    z-index: 2;
+    .splash-inner {
+        color: white;
+        .page-subtitle {
+            font-size: 64px;
+            font-family: $font-subtitle;
+        }
+        .page-title {
+            font-size: 84px;
+            font-family: $font-title;
+        }
+        .button-main {
+            background-color: $button-color;
+            border: 0;
+            border-radius: 5px;
+            color: white;
+            padding: 25px 40px;
+            font-size: 24px;
+            font-family: $font-text;
+            font-weight: bold;
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.btn:hover {
+    transition: 1s;
+    opacity: 75%;
+}
+.nav-right-buttons a:hover {
+    transition: 1s;
+    color: $gold-color;
 }

@@ -2,35 +2,116 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
+section {
+  position: relative;
+  top: 0;
+}
+
 .navigation {
-  margin-top: 30px;
+  margin-top: 0;
+  background-image: url("https://i.postimg.cc/LXgk1GXH/pexels-saya-kimura-401107.jpg");
+  height: 75vh;
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1;
 }
 .navigation .container {
   display: flex;
 }
 .navigation .nav-left-button {
   list-style-type: none;
-  flex: 0.5;
+  flex: 1;
   flex-wrap: wrap;
+  margin-top: 60px;
+  font-family: "Satisfy", cursive;
+  font-size: 60px;
+}
+.navigation .nav-left-button i {
+  color: #f1c40f;
+  font-size: 62px;
+  padding: 0 2px;
+  position: absolute;
+  top: 8px;
+  left: -50px;
 }
 .navigation .nav-left-button a {
   text-decoration: none;
+  color: #f1c40f;
 }
 .navigation .nav-left-button li {
   padding: 0 20px;
+  position: relative;
 }
 .navigation .nav-right-buttons {
   display: flex;
   list-style-type: none;
-  flex: 0.5;
-  justify-content: space-between;
+  flex: 3;
   flex-wrap: wrap;
+  margin-top: 60px;
+  font-size: 16px;
+  justify-content: flex-end;
+  padding-top: 16px;
+  font-family: "Inconsolata", monospace;
 }
 .navigation .nav-right-buttons a {
   text-decoration: none;
+  color: white;
 }
 .navigation .nav-right-buttons li {
-  padding: 0 20px;
+  padding: 5px 20px;
 }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLHNCQUFBO0FDQ0o7O0FER0E7RUFDSSxnQkFBQTtBQ0FKO0FEQ0k7RUFDSSxhQUFBO0FDQ1I7QURDSTtFQVFJLHFCQUFBO0VBQ0EsU0FBQTtFQUNBLGVBQUE7QUNOUjtBREhRO0VBQ0kscUJBQUE7QUNLWjtBREZRO0VBQ0ksZUFBQTtBQ0laO0FERUk7RUFRSSxhQUFBO0VBQ0EscUJBQUE7RUFDQSxTQUFBO0VBQ0EsOEJBQUE7RUFDQSxlQUFBO0FDUFI7QURKUTtFQUNJLHFCQUFBO0FDTVo7QURIUTtFQUNJLGVBQUE7QUNLWiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+.splash {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -520px;
+  text-align: center;
+  min-width: 540px;
+  max-height: 450px;
+  margin: -230px 0;
+  z-index: 2;
+}
+.splash .splash-inner {
+  color: white;
+}
+.splash .splash-inner .page-subtitle {
+  font-size: 64px;
+  font-family: "Kalam", cursive;
+}
+.splash .splash-inner .page-title {
+  font-size: 84px;
+  font-family: "Signika", sans-serif;
+}
+.splash .splash-inner .button-main {
+  background-color: #f9ca24;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  padding: 25px 40px;
+  font-size: 24px;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: bold;
+}
+.splash .splash-inner .button-main a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transition: 1s;
+  opacity: 75%;
+}
+
+.nav-right-buttons a:hover {
+  transition: 1s;
+  color: #f1c40f;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLHNCQUFBO0FDQ0o7O0FERUE7RUFDSSxTQUFBO0FDQ0o7O0FEQ0E7RUFDSSxrQkFBQTtFQUNBLE1BQUE7QUNFSjs7QURVQTtFQUNJLGFBQUE7RUFDQSxvRkFBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtFQUNBLGtDQUFBO0VBQ0Esc0JBQUE7RUFDQSw0QkFBQTtFQUNBLFVBQUE7QUNQSjtBRFFJO0VBQ0ksYUFBQTtBQ05SO0FEUUk7RUFpQkkscUJBQUE7RUFDQSxPQUFBO0VBQ0EsZUFBQTtFQUNBLGdCQUFBO0VBQ0EsK0JBckNJO0VBc0NKLGVBQUE7QUN0QlI7QURDUTtFQUNJLGNBdkJDO0VBd0JELGVBQUE7RUFDQSxjQUFBO0VBQ0Esa0JBQUE7RUFDQSxRQUFBO0VBQ0EsV0FBQTtBQ0NaO0FEQ1E7RUFDSSxxQkFBQTtFQUNBLGNBaENDO0FDaUNiO0FEQ1E7RUFDSSxlQUFBO0VBQ0Esa0JBQUE7QUNDWjtBRFFJO0VBUUksYUFBQTtFQUNBLHFCQUFBO0VBQ0EsT0FBQTtFQUNBLGVBQUE7RUFDQSxnQkFBQTtFQUNBLGVBQUE7RUFDQSx5QkFBQTtFQUNBLGlCQUFBO0VBQ0EscUNBNURXO0FDK0NuQjtBREZRO0VBQ0kscUJBQUE7RUFDQSxZQUFBO0FDSVo7QURGUTtFQUNJLGlCQUFBO0FDSVo7O0FEV0E7RUFDSSxhQUFBO0VBQ0EsdUJBQUE7RUFDQSxrQkFBQTtFQUNBLFdBQUE7RUFDQSxrQkFBQTtFQUNBLGdCQUFBO0VBQ0EsaUJBQUE7RUFDQSxnQkFBQTtFQUNBLFVBQUE7QUNSSjtBRFNJO0VBQ0ksWUFBQTtBQ1BSO0FEUVE7RUFDSSxlQUFBO0VBQ0EsNkJBOUVJO0FDd0VoQjtBRFFRO0VBQ0ksZUFBQTtFQUNBLGtDQTlFQztBQ3dFYjtBRFFRO0VBQ0kseUJBeEZHO0VBeUZILFNBQUE7RUFDQSxrQkFBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtFQUNBLGVBQUE7RUFDQSxvQ0ExRkE7RUEyRkEsaUJBQUE7QUNOWjtBRE9ZO0VBQ0ksWUFBQTtFQUNBLHFCQUFBO0FDTGhCOztBRFVBO0VBQ0ksY0FBQTtFQUNBLFlBQUE7QUNQSjs7QURTQTtFQUNJLGNBQUE7RUFDQSxjQTVHUztBQ3NHYiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
