@@ -6,8 +6,7 @@ body {
     margin: 0;
 }
 section {
-    position: relative;
-    top: 0;
+    margin-top: 110px;
 }
 $button-color: #f9ca24;
 $gold-color: #f1c40f;
@@ -19,15 +18,17 @@ $font-logo: 'Satisfy', cursive;
 $font-title: 'Signika', sans-serif;
 
 //Navigation Bar
-.navigation {
-    margin-top: 0;
+.header-image {
     background-image: url("https://i.postimg.cc/LXgk1GXH/pexels-saya-kimura-401107.jpg");
     height: 75vh;   
+    min-height: 900px;
     position: relative;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-    z-index: 1;
+}
+.navigation {
+    margin-top: 0;
     .container {
         display: flex;  
     }
@@ -73,19 +74,23 @@ $font-title: 'Signika', sans-serif;
         padding-top: 16px;
         font-family: $font-nav-buttons;
     }
+    .nav-right-buttons a:hover {
+        transition: 1s;
+        color: $gold-color;
+    }
+    .nav-left-button:hover {
+        transition: 0.5s;
+        transform: scale(1.2);
+    }
 }
 
 //Splash Title
 .splash {
     display: flex;
     justify-content: center;
-    position: relative;
-    top: -520px;
     text-align: center;
     min-width: 540px;
     max-height: 450px;
-    margin: -230px 0;
-    z-index: 2;
     .splash-inner {
         color: white;
         .page-subtitle {
@@ -112,11 +117,54 @@ $font-title: 'Signika', sans-serif;
         }
     }
 }
+.services {
+    .page-main-text {
+        font-size: 54px;
+        text-align: center;
+        font-family: $font-title;
+        margin-bottom: 10px;
+        i {
+            margin-left: 10px;;
+        }
+    }
+    span {
+        color: gray;
+        font-size: 20px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+        font-family: $font-nav-buttons;
+    } 
+    .icons-card {
+        text-align: center;
+    }
+    .icons-card i {
+        font-size: 46px;
+        border: solid 4px;
+        padding-top: 16px;
+        border-radius: 50%;
+        width: 90px;
+        height: 90px;
+        border-color: $gold-color;
+        color: $button-color;
+    }
+    h3 {
+        font-size: 28px;
+        font-family: $font-title;
+        font-weight: bold;
+    }
+    p {
+        font-size: 18px;
+        font-family: $font-nav-buttons;
+    }
+    
+}
+
+.btn {
+    cursor: pointer;
+}
 .btn:hover {
     transition: 1s;
     opacity: 75%;
-}
-.nav-right-buttons a:hover {
-    transition: 1s;
-    color: $gold-color;
 }
